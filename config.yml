@@ -1,0 +1,8 @@
+baseURL: "http://avinashvakil.com/"
+languageCode: "en-us"
+title: "Avinash Vakil"
+module:
+    imports:
+        - path: github.com/theNewDynamic/gohugo-theme-ananke
+theme:
+  - github.com/theNewDynamic/gohugo-theme-ananke

@@ -1,0 +1,66 @@
+baseURL = "http://avinashvakil.com/"
+languageCode = "en-us"
+title = "MetricExpansion"
+theme = ["hugo-video", "hugo-ink"]
+sectionPagesMenu = "main"
+paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+
+copyright = "© Avinash Vakil"
+
+pygmentsstyle = "vs"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+googleAnalytics = ""
+disqusShortname = ""
+
+[params]
+  subtitle = "a hacker who does very few things"
+
+  # Optional 64x64 avatar image.
+  avatar = "/images/profile.jpg"
+
+  # Content types to disable Disqus on.
+  disableDisqusTypes = ["page"]
+  
+  featherIconsCDN = true
+
+  mode = "auto" # "dark" or "auto"
+  # customCSS = "css/custom.css"  # Custom CSS applied to default styles.
+  # customDarkCSS = "css/custom-dark.css"  # Custom styles applied to dark mode css.
+  # customJS = ["js/custom.js", "js/custom1.js"]  # Custom JS scripts.
+
+[markup]
+[markup.goldmark]
+  [markup.goldmark.extensions]
+    definitionList = true
+    footnote = true
+    linkify = true
+    strikethrough = true
+    table = true
+    taskList = true
+    typographer = true
+  [markup.goldmark.parser]
+    attribute = true
+    autoHeadingID = true
+    autoHeadingIDType = "github"
+  [markup.goldmark.renderer]
+    hardWraps = false
+    unsafe = true
+    xhtml = false
+
+# Nav.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/thekineticeffect"
+
+[[params.social]]
+name = "Gitlab"
+icon = "gitlab"
+url = "https://gitlab.com/metricexpansion"

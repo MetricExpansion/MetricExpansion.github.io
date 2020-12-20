@@ -20,6 +20,6 @@ jobs:
           # A Github Personal Access Token with Repo permissions
           githubToken: ${{ secrets.PERSONAL_TOKEN }}
           # The custom domain name for your GH Pages Site
-          cname: avinashvakil.com # optional
+          cname: metricexpansion.com # optional
           # The branch to push the built site to
           branch: master # optional, default is gh-pages
